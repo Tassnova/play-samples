@@ -8,8 +8,8 @@
 
 @main("Welcome to Play") {
   @form(routes.PersonController.addPerson()) {
-		@inputText(person("Tass"))
-		@inputText(person("19"))
+		@inputText(person("name"))
+		@inputText(person("age"))
 		@CSRF.formField
 
 		<div class="buttons">
